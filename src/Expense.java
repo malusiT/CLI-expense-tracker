@@ -8,10 +8,17 @@ public class Expense {
     private double amount;
     private int id;
 
-    public Expense(String description, double amount, LocalDate date){
+    public Expense(String description, double amount, LocalDate date) {
         this.description = description;
         this.amount = amount;
         this.id = idCounter++;
+        this.date = date;
+    }
+
+    public Expense(String description, double amount, LocalDate date, int id) {
+        this.description = description;
+        this.amount = amount;
+        this.id = id;
         this.date = date;
     }
 
@@ -47,30 +54,22 @@ public class Expense {
         this.id = id;
     }
 
-    //get expenses
-    //add expenses
-    //delete expenses
+    // get expenses
+    // add expenses
+    // delete expenses
 
-    public String viewExpenses(){
-        if(id > 1 ) {
+    public String viewExpenses() {
+        if (id > 1) {
             return String.format("### %-2d   %-15s   %-25s   $%5.2f ", id, date, description, amount);
-        }else{
+        } else {
             return String.format("### Id " + "  Date            " + "Description              " + "     Amount \n" +
-                                 "### %-2d   %-15s   %-25s   $%5.2f ", id, date, description, amount);
+                    "### %-2d   %-15s   %-25s   $%5.2f ", id, date, description, amount);
         }
     }
 
-
-
     @Override
     public String toString() {
-        return "Expense{" +
-                "description='" + description + '\'' +
-                ", date=" + date +
-                ", amount=" + amount +
-                ", id=" + id +
-                '}';
+        return id + ";" + date + ";" + description + ";" + amount;
     }
-
 
 }
