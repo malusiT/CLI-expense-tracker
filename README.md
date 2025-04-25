@@ -22,19 +22,14 @@ java Main
 
 ## Available Commands
 ```bash
-list — List all expenses
+list                                # List all expenses
+add --description "desc" --amount 50.00   # Add a new expense
+delete ID                           # Delete an expense by its ID
+summary                             # View total expenses
+summary --month MM                  # View expenses for a specific month (e.g., 01 = January)
+help                                # Show help message
+Exit                                # Exit the program
 
-add --description "desc" --amount amount — Add a new expense
-
-delete id — Delete an expense by its ID
-
-summary — View total expenses
-
-summary --month MM — View total expenses for a specific month (01–12)
-
-help — Show help message
-
-Exit — Exit the program
 ```
 
 ### Example Usage
@@ -51,7 +46,21 @@ list
 
 ├── Expense.java
 
-├── README.md
+├── list.txt (auto-generated)
+
+└── README.md
+
+## 🔒 Data Format
+
+Data is saved to list.txt using the following format:
+```bash
+id;YYYY-MM-DD;description;amount
+```
+For example:
+```bash
+1;2025-04-25;Groceries;150.0
+```
+
 
 # 👨‍💻 Author
 Created by [malusiT](https://github.com/malusit)
