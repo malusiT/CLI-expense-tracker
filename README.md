@@ -1,8 +1,3 @@
-# CLI-expense-tracker
-
-[https://github.com/malusiT/CLI-expense-tracker](https://github.com/malusiT/CLI-expense-tracker)
-
-
 # CLI Expense Tracker 🧾
 A simple command-line interface (CLI) expense tracker written in Java. This tool helps you manage and track your personal expenses directly from the terminal.
 
