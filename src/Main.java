@@ -9,9 +9,9 @@ public class Main {
     private static final String FILE_NAME = "list.txt";
 
     // static ArrayList<Expense> expenses = new ArrayList<>();
-    static ArrayList<Expense> expenses = (new File("list.txt")).exists() && new File("list.txt").length() > 0)
-            ? loadExpenses()
-            : new ArrayList<>();
+    static ArrayList<Expense> expenses = (new File("list.txt")).exists() && new File("list.txt").length() > 0)?
+
+    loadExpenses() : new ArrayList<>();
 
     public static void main(String[] args) {
 
@@ -22,9 +22,8 @@ public class Main {
 
         // ✅ Add this line to preload test expenses:
         // if (expenses.isEmpty()) {
-        //     addSampleExpenses();
+        // addSampleExpenses();
         // }
-
 
         while (isRunning) {
             System.out.print("expense-tracker ");
@@ -303,7 +302,6 @@ public class Main {
                     System.out.println("Invalid line format: " + line);
                     continue;
                 }
-
 
                 int id = Integer.parseInt(stringParts[0]);
 
