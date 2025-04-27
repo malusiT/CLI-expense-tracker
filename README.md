@@ -2,6 +2,8 @@
 A simple command-line interface (CLI) expense tracker written in Java. This tool helps you manage and track your personal expenses directly from the terminal.
 
 ## Project URL
+
+https://roadmap.sh/projects/expense-tracker
 [https://github.com/malusiT/CLI-expense-tracker](https://github.com/malusiT/CLI-expense-tracker)
 
 This project is a CLI (Command Line Interface) application. It runs locally after downloading or cloning the repository.
