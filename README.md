@@ -1,5 +1,7 @@
-<<<<<<< HEAD
 # CLI-expense-tracker
+
+[https://github.com/malusiT/CLI-expense-tracker](https://github.com/malusiT/CLI-expense-tracker)
+
 Simple command line interface expense tracker to manage finances
 =======
 # CLI Expense Tracker 🧾
@@ -68,4 +70,3 @@ For example:
 
 # 👨‍💻 Author
 Created by [malusiT](https://github.com/malusit)
->>>>>>> f56e531da517332d6de1354a6e7c18c145eba986
